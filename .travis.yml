@@ -6,10 +6,9 @@ befofe_install:
   - docker build -t rsanto27/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true rsanto27/docker-react npm run test -- --coverage
+  - docker run rsanto27/docker-react npm run test -- --coverage
 
 deploy:
-  edge: true
   provider: elasticbeanstalk
   region: "us-east-2"
   app: "docker"
