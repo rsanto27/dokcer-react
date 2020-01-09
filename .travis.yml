@@ -1,0 +1,9 @@
+sudo: required
+services:
+  - docker
+
+befofe_install:
+  - docker build -t rsanto27/docker-react -f Dockerfile.dev .
+
+script:
+  - docker run rsanto27/docker-react npm run test -- --coverage
