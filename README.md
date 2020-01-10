@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## The purpose
+
+In all my little life of a programer, i'm always running against the time. I realized that, for delivery on date, several time we make technical debts that will coast for us too much. Then this project aproach a way that init a frontend app using docker, reactjs, travis deploying inside AWS Elastic Beanstalk
+
 ## Available Scripts
 
 In the project directory, you can run:
